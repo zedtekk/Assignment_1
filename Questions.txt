@@ -1,0 +1,10 @@
+1. Create a webpage that tells us:
+-your name,
+-your altschool id, and
+-the reason why you are here and your goal for altschool
+
+2. Create a form for anybody who wants to sign up for altschool.
+
+Both webpages must be linked together.
+
+Make sure both pages have global navigation. And make sure the navigation is accessible.

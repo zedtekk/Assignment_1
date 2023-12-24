@@ -1,0 +1,136 @@
+/*css reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* main css */
+html, body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: rgb(238, 238, 238);
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: rgb(2, 117, 216);
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: rgb(1, 68, 126);
+    text-decoration: underline;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: rgb(106, 111, 245);;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+/* div.control {
+  border: 1px solid
+} */
+
+div.name {
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  text-align: center;
+  margin-block-start: 15em;
+  margin-block-end: 20em;
+
+  >p {
+    font-size: 1.375rem;
+    line-height: 32px;
+    margin-top: 0;
+  }
+
+  >h1 {
+    font-size: 2.1875rem;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  >span {
+    font-size: .875rem;
+    color: hsl(0, 0%, 67%);
+    letter-spacing: -.01rem;
+  }
+}
